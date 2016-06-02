@@ -11,12 +11,36 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6x-at-5Tc">
+                    <rect key="frame" x="225" y="375" width="150" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="JRa-bU-kdp"/>
+                        <constraint firstAttribute="height" constant="50" id="d1K-q6-TEg"/>
+                        <constraint firstAttribute="width" constant="150" id="wS7-jc-MOF"/>
+                        <constraint firstAttribute="height" constant="50" id="y3X-fj-8QQ"/>
+                    </constraints>
+                    <state key="normal" title="Blue Color">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="JRa-bU-kdp"/>
+                            <exclude reference="y3X-fj-8QQ"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="onColorButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="fKi-J4-6pZ"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76N-aI-Vun">
-                    <rect key="frame" x="225" y="200" width="150" height="50"/>
+                    <rect key="frame" x="225" y="275" width="150" height="50"/>
                     <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstAttribute="width" constant="150" id="V2v-8v-Cgg"/>
                         <constraint firstAttribute="height" constant="50" id="XnX-Ob-0Zq"/>
                         <constraint firstAttribute="width" constant="150" id="Zwr-uw-B77"/>
+                        <constraint firstAttribute="height" constant="50" id="eqa-my-NC8"/>
                         <constraint firstAttribute="height" constant="100" id="khf-zK-dta"/>
                         <constraint firstAttribute="width" constant="150" id="u4T-kw-ewR"/>
                     </constraints>
@@ -25,38 +49,34 @@
                     </state>
                     <variation key="default">
                         <mask key="constraints">
+                            <exclude reference="XnX-Ob-0Zq"/>
                             <exclude reference="Zwr-uw-B77"/>
                             <exclude reference="khf-zK-dta"/>
+                            <exclude reference="u4T-kw-ewR"/>
                         </mask>
                     </variation>
                     <connections>
                         <action selector="onColorButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="yWk-MK-ujc"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6x-at-5Tc">
-                    <rect key="frame" x="225" y="300" width="150" height="50"/>
-                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="150" id="JRa-bU-kdp"/>
-                        <constraint firstAttribute="height" constant="50" id="y3X-fj-8QQ"/>
-                    </constraints>
-                    <state key="normal" title="Blue Color">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="onColorButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="fKi-J4-6pZ"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSS-bF-D6W">
-                    <rect key="frame" x="225" y="100" width="150" height="50"/>
+                    <rect key="frame" x="225" y="175" width="150" height="50"/>
                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="117-XB-7vx"/>
                         <constraint firstAttribute="width" constant="150" id="7oc-6h-8W2"/>
+                        <constraint firstAttribute="width" constant="150" id="a0E-az-egh"/>
+                        <constraint firstAttribute="height" constant="50" id="ldm-tw-9NM"/>
                     </constraints>
                     <state key="normal" title="Red Color">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="117-XB-7vx"/>
+                            <exclude reference="7oc-6h-8W2"/>
+                        </mask>
+                    </variation>
                     <connections>
                         <action selector="onColorButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="OGl-aq-6eK"/>
                     </connections>
@@ -69,12 +89,24 @@
                 <constraint firstItem="76N-aI-Vun" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PwJ-YG-Nhb"/>
                 <constraint firstItem="76N-aI-Vun" firstAttribute="top" secondItem="jSS-bF-D6W" secondAttribute="bottom" constant="50" id="Rzl-04-lwf"/>
                 <constraint firstItem="c6x-at-5Tc" firstAttribute="top" secondItem="jSS-bF-D6W" secondAttribute="bottom" constant="50" id="WNR-p2-nq3"/>
+                <constraint firstItem="jSS-bF-D6W" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Wwf-NZ-Ins"/>
                 <constraint firstItem="c6x-at-5Tc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Wxa-YD-twl"/>
+                <constraint firstItem="c6x-at-5Tc" firstAttribute="top" secondItem="76N-aI-Vun" secondAttribute="bottom" constant="50" id="Ypu-H6-nL7"/>
                 <constraint firstItem="jSS-bF-D6W" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cbr-xC-u13"/>
+                <constraint firstItem="76N-aI-Vun" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gUC-Eh-Pht"/>
+                <constraint firstItem="c6x-at-5Tc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="n9g-AD-tMZ"/>
+                <constraint firstItem="76N-aI-Vun" firstAttribute="top" secondItem="jSS-bF-D6W" secondAttribute="bottom" constant="50" id="nzC-jB-SvZ"/>
+                <constraint firstItem="76N-aI-Vun" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="wxp-HN-pZJ"/>
             </constraints>
             <variation key="default">
                 <mask key="constraints">
+                    <exclude reference="Bid-dP-7bl"/>
+                    <exclude reference="cbr-xC-u13"/>
+                    <exclude reference="PwJ-YG-Nhb"/>
+                    <exclude reference="Rzl-04-lwf"/>
+                    <exclude reference="7xO-fX-jeb"/>
                     <exclude reference="WNR-p2-nq3"/>
+                    <exclude reference="Wxa-YD-twl"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="450" y="326"/>

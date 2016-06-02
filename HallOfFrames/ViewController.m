@@ -13,7 +13,7 @@
 
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,CustomViewDelegate>
 @property NSMutableArray *pictures;
-@property CustomView *customView;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
@@ -31,8 +31,6 @@ NSString* const kCell = @"CellID";
     Picture* pic5 = [[Picture alloc]initWithImage:[UIImage imageNamed:@"sunguy"] andColor:[UIColor blueColor]];
     
     self.pictures = [[NSMutableArray alloc]initWithObjects:pic1, pic2, pic3, pic4, pic5, nil];
-    self.customView = [[CustomView alloc]init];
-    self.customView.delegate = self;
     
 }
 
@@ -49,12 +47,18 @@ NSString* const kCell = @"CellID";
     return 5;
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    UIView *test =[[[NSBundle mainBundle] loadNibNamed:@"CustomizationView" owner:self options:nil] objectAtIndex:0];
+    CustomView *test =[[[NSBundle mainBundle] loadNibNamed:@"CustomizationView" owner:self options:nil] objectAtIndex:0];
+    test.delegate = self;
+    test.path = indexPath;
     [self.view addSubview:test];
+
+    //[self.view.frame]
+    [self.view.subviews[3] setFrame:self.view.frame];
 }
 
 -(void)customViewDelegate:(CustomView *)view didPressButton:(UIButton *)button{
-    NSLog(@"OK");
+    [view removeFromSuperview];
+    [self.collectionView cellForItemAtIndexPath:view.path].backgroundColor = button.backgroundColor;
 }
 
 @end

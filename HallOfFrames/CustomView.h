@@ -18,5 +18,6 @@
 @end
 @interface CustomView : UIView
 @property (nonatomic,weak) id<CustomViewDelegate> delegate;
+@property NSIndexPath* path;
 
 @end
