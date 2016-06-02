@@ -9,5 +9,13 @@
 #import "Picture.h"
 
 @implementation Picture
+-(instancetype)initWithImage:(UIImage*)image andColor:(UIColor*)color{
+    self = [super init];
+    if (self) {
+        self.image = image;
+        self.frameColor = color;
+    }
+    return self;
+}
 
 @end
