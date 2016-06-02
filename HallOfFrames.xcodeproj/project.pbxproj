@@ -15,6 +15,8 @@
 		E6E3D6531D00BDF900ABB481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6E3D6511D00BDF900ABB481 /* LaunchScreen.storyboard */; };
 		E6E3D65C1D00C42000ABB481 /* PictureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E3D65B1D00C42000ABB481 /* PictureCollectionViewCell.m */; };
 		E6E3D65F1D00C44A00ABB481 /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E3D65E1D00C44A00ABB481 /* Picture.m */; };
+		E6E3D6611D00CDCD00ABB481 /* CustomizationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6E3D6601D00CDCD00ABB481 /* CustomizationView.xib */; };
+		E6E3D6641D00CDF000ABB481 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E3D6631D00CDF000ABB481 /* CustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		E6E3D65B1D00C42000ABB481 /* PictureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureCollectionViewCell.m; sourceTree = "<group>"; };
 		E6E3D65D1D00C44A00ABB481 /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
 		E6E3D65E1D00C44A00ABB481 /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Picture.m; sourceTree = "<group>"; };
+		E6E3D6601D00CDCD00ABB481 /* CustomizationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomizationView.xib; sourceTree = "<group>"; };
+		E6E3D6621D00CDF000ABB481 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		E6E3D6631D00CDF000ABB481 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +73,9 @@
 				E6E3D6471D00BDF900ABB481 /* AppDelegate.m */,
 				E6E3D6491D00BDF900ABB481 /* ViewController.h */,
 				E6E3D64A1D00BDF900ABB481 /* ViewController.m */,
+				E6E3D6601D00CDCD00ABB481 /* CustomizationView.xib */,
+				E6E3D6621D00CDF000ABB481 /* CustomView.h */,
+				E6E3D6631D00CDF000ABB481 /* CustomView.m */,
 				E6E3D64C1D00BDF900ABB481 /* Main.storyboard */,
 				E6E3D65A1D00C42000ABB481 /* PictureCollectionViewCell.h */,
 				E6E3D65B1D00C42000ABB481 /* PictureCollectionViewCell.m */,
@@ -148,6 +156,7 @@
 			files = (
 				E6E3D6531D00BDF900ABB481 /* LaunchScreen.storyboard in Resources */,
 				E6E3D6501D00BDF900ABB481 /* Assets.xcassets in Resources */,
+				E6E3D6611D00CDCD00ABB481 /* CustomizationView.xib in Resources */,
 				E6E3D64E1D00BDF900ABB481 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +173,7 @@
 				E6E3D65C1D00C42000ABB481 /* PictureCollectionViewCell.m in Sources */,
 				E6E3D6481D00BDF900ABB481 /* AppDelegate.m in Sources */,
 				E6E3D6451D00BDF900ABB481 /* main.m in Sources */,
+				E6E3D6641D00CDF000ABB481 /* CustomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
